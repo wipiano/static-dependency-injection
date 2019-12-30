@@ -34,7 +34,7 @@ namespace StaticDependencyInjection
     [AttributeUsage(AttributeTargets.Class, Inherited = false, AllowMultiple = false)]
     public class TransientServiceAsAttribute : ServiceAttribute
     {
-        public TransientServiceAsAttribute(Type interfaceType) : base(null, interfaceType, ServiceLifetime.Transient,
+        public TransientServiceAsAttribute(Type serviceType) : base(null, serviceType, ServiceLifetime.Transient,
             true)
         {
         }

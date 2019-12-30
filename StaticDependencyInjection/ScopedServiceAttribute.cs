@@ -34,7 +34,7 @@ namespace StaticDependencyInjection
     [AttributeUsage(AttributeTargets.Class, Inherited = false, AllowMultiple = false)]
     public class ScopedServiceAsAttribute : ServiceAttribute
     {
-        public ScopedServiceAsAttribute(Type interfaceType) : base(null, interfaceType, ServiceLifetime.Scoped,
+        public ScopedServiceAsAttribute(Type serviceType) : base(null, serviceType, ServiceLifetime.Scoped,
             true)
         {
         }

@@ -34,7 +34,7 @@ namespace StaticDependencyInjection
     [AttributeUsage(AttributeTargets.Class, Inherited = false, AllowMultiple = false)]
     public class SingletonServiceAsAttribute : ServiceAttribute
     {
-        public SingletonServiceAsAttribute(Type interfaceType) : base(null, interfaceType, ServiceLifetime.Singleton,
+        public SingletonServiceAsAttribute(Type serviceType) : base(null, serviceType, ServiceLifetime.Singleton,
             true)
         {
         }

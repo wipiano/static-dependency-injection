@@ -6,14 +6,14 @@ namespace StaticDependencyInjection
     public abstract class ServiceAttribute : Attribute
     {
         public Type ImplType { get; }
-        public Type InterfaceType { get; }
+        public Type ServiceType { get; }
         public ServiceLifetime LifeTime { get; }
         public bool Weak { get; }
 
-        protected ServiceAttribute(Type implType, Type interfaceType, ServiceLifetime lifeTime, bool weak)
+        protected ServiceAttribute(Type implType, Type serviceType, ServiceLifetime lifeTime, bool weak)
         {
             ImplType = implType;
-            InterfaceType = interfaceType;
+            ServiceType = serviceType;
             LifeTime = lifeTime;
             Weak = weak;
         }

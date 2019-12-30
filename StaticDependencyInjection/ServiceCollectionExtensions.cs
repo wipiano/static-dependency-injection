@@ -18,7 +18,7 @@ namespace StaticDependencyInjection
             foreach (var (type, attr) in targets)
             {
                 var descriptor =
-                    ServiceDescriptor.Describe(attr.InterfaceType ?? type, attr.ImplType ?? type, attr.LifeTime);
+                    ServiceDescriptor.Describe(attr.ServiceType ?? type, attr.ImplType ?? type, attr.LifeTime);
 
                 if (attr.Weak)
                 {
