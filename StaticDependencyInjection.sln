@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StaticDependencyInjection", "StaticDependencyInjection\StaticDependencyInjection.csproj", "{09F3BDCC-A86A-4E8B-A544-81EB20DE005F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sample", "Sample\Sample.csproj", "{2554B4CD-E583-45E6-80AA-EEC7EC413E0D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{09F3BDCC-A86A-4E8B-A544-81EB20DE005F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{09F3BDCC-A86A-4E8B-A544-81EB20DE005F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{09F3BDCC-A86A-4E8B-A544-81EB20DE005F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2554B4CD-E583-45E6-80AA-EEC7EC413E0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2554B4CD-E583-45E6-80AA-EEC7EC413E0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2554B4CD-E583-45E6-80AA-EEC7EC413E0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2554B4CD-E583-45E6-80AA-EEC7EC413E0D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
