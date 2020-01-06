@@ -2,6 +2,10 @@
 
     <PropertyGroup>
         <TargetFramework>netstandard2.0</TargetFramework>
+        <Authors>wipiano</Authors>
+        <RepositoryUrl>https://github.com/wipiano/static-dependency-injection</RepositoryUrl>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+        <PackageLicenseUrl>https://github.com/wipiano/static-dependency-injection/blob/master/LICENSE</PackageLicenseUrl>
     </PropertyGroup>
 
     <ItemGroup>
