@@ -13,7 +13,8 @@ namespace StaticDependencyInjection
         public static IServiceCollection AddStaticServices(this IServiceCollection services, Assembly targetAssembly)
         {
             var targets = targetAssembly.GetTypes()
-                .Select(t => (type: t, attr: t.GetCustomAttributes().OfType<ServiceAttribute>().FirstOrDefault()));
+                .Select(t => (type: t, attr: t.GetCustomAttributes().OfType<ServiceAttribute>().FirstOrDefault()))
+                .Where(p => p.attr != null);
 
             foreach (var (type, attr) in targets)
             {
